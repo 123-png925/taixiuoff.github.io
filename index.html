@@ -95,7 +95,7 @@
 
   <div class="dice" id="dice">🎲🎲🎲</div>
   <div class="result" id="result">Kết quả sẽ hiện ở đây...</div>
-  <div class="score" id="score">Điểm: 1000</div>
+  <div class="score" id="score">Điểm: 5000</div>
 
   <div class="history">
     <h3>Lịch sử ván chơi</h3>
@@ -142,7 +142,7 @@
 
       if (outcome === choice) {
         resultText += " ✅ Bạn Thắng!";
-        score += 100;
+        score += 95;
         soundWin.play();
       } else {
         resultText += " ❌ Bạn Thua!";
@@ -159,7 +159,7 @@
 
       document.getElementById("history").innerHTML =
         historyList.map(h => `<li>${h}</li>`).join("");
-    }, 30000); // 30 giây hiệu ứng
+    }, 1500); // 1.5 giây hiệu ứng
   }
 </script>
 </body>
